@@ -136,7 +136,6 @@ function createComponent() {
   comp = fixture.componentInstance;
 
   const injector = fixture.debugElement.injector;
-  location = injector.get(Location) as SpyLocation;
   router = injector.get(Router);
   router.initialNavigation();
   spyOn(injector.get(TwainService), 'getQuote')
