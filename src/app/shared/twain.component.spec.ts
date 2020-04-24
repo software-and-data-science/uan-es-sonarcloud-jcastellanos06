@@ -24,7 +24,6 @@ describe('TwainComponent', () => {
     });
 
     fixture = TestBed.createComponent(TwainComponent);
-    comp    = fixture.componentInstance;
 
     // TwainService actually injected into the component
     twainService = fixture.debugElement.injector.get(TwainService);
